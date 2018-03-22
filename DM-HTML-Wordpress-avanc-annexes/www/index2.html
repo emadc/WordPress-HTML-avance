@@ -54,7 +54,7 @@ header ul{
 }
 .navbar-brand {
     height: 55px;
-    padding: 0 45px;
+    padding: 0 35px;
 }
 /**menu**/
  .navbar-default{
@@ -66,6 +66,22 @@ header ul{
     height: 300px;
     float: right;
     background-color: red;
+}
+.navbar-toggle {
+    margin-right: 25px;
+    border: unset;
+}
+.navbar-default .navbar-toggle:focus {
+    background-color: unset;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-toggle .icon-bar {
+    width: 30px;
+    height: 4px;
+    border-radius: unset;
+    margin-bottom: 5px;
 }
 /**main**/
 #banner {
@@ -91,7 +107,7 @@ header ul{
     height: 540px;
     background-image: url("img/fond-beige.jpg");
     background-size: cover;
-    padding-top: 10px;
+    padding: 10px 5px 0;
 }
 #presentation p{
     line-height: 30px;
@@ -104,21 +120,46 @@ header ul{
     height: 205px;
     text-align: center;
 }
+
 /**footer**/
 
+footer {
+    background-color: #9e1414;
+    margin-top: -5px;
+    height: 180px;
+    padding-top: 40px;
+}
 footer ul {
     list-style-type: none;
     display: flex;
     align-content: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-}
- footer li{
- 	float: left;
-    margin-right: 10px;
+    margin: 0;
     padding: 0;
+}
+footer li{
+ 	float: left;
+    padding: 0;
+    margin: 5px 0;
  }
+footer a {
+    color: #fff;
+    padding: 0 10px;
+    border-right: 1px solid #fff;
+}
+footer li:last-child a{
+    border-right: unset;
+}
+footer div {
+    text-align: center;
+    color: #fff;
+}
 /****************/
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
 </style>
 </head>
 <body>
@@ -195,25 +236,24 @@ footer ul {
 					<img alt="7" src="img/r1.png"/>
 				</div>				
 			</section>
-			<img alt="bottom" class="img-responsive"/>
+			<img alt="bottom" class="img-responsive" src="img/banner-home-2.png"/>
 		</main>
 		<footer class="row">
-		footer
 			<nav class="col-md-12">
 				<ul>
-					<li>HOME</li>
-					<li>HMBURGER</li>
-					<li>PIZZA</li>
-					<li>FAST FOOD</li>
-					<li>DRINKS</li>
-					<li>COMBO BUY</li>
-					<li>CONTACT</li>
-					<li>WISHLIST</li>
-					<li>MY ACCOUNT</li>
-					<li>LOGIN</li>
+					<li><a>HOME</a></li>
+					<li><a>HMBURGER</a></li>
+					<li><a>PIZZA</a></li>
+					<li><a>FAST FOOD</a></li>
+					<li><a>DRINKS</a></li>
+					<li><a>COMBO BUY</a></li>
+					<li><a>CONTACT</a></li>
+					<li><a>WISHLIST</a></li>
+					<li><a>MY ACCOUNT</a></li>
+					<li><a>LOGIN</a></li>
 				</ul>
 			</nav>
-			<div class="col-md-12">Copyright</div>
+			<div class="col-md-12">Copyright &copy; 2018 Fast Food. All Rights Reserved</div>
 		</footer>
 	</div>
 </body>
