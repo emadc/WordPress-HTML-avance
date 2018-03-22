@@ -3,52 +3,193 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<style type="text/css">
+/* [class*="col-"], footer {
+  background-color: lightgreen;
+  border: 2px solid black;
+  border-radius: 6px;
+  line-height: 40px;
+  text-align: center;
+} */
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+/*******logo*****/
+
+/****************/
+/*****header*******/
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }
+h1 {
+    margin: 0;
+}
+header {
+    height: 55px;
+    background-color: #9e1414;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+header div {
+    float: left;
+    margin-left: 16px;
+}
+header img {
+    width: 90px;
+}
+header nav {
+    height: 100%;
+    float: left;    
+    display: none;
+}
+header ul{
+ 	list-style-type: none;
+    margin: 35px;
+    padding: 0;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+ }
+/**main**/
+#banner {
+    margin-top: 55px;
+    height: 165px;
+}
+#category {
+    height: 550px;
+    padding-top: 37px;
+    background-image: url("img/fond-beige.jpg");
+    background-size: cover;
+}
+#category div {
+    margin-bottom: 20px;
+    height: 150px;
+}
+#category img {
+    height: 100%;
+    margin: auto;
+}
+#presentation {
+    text-align: center;
+    height: 540px;
+    background-image: url("img/fond-beige.jpg");
+    background-size: cover;
+    padding-top: 10px;
+}
+#presentation p{
+    line-height: 30px;
+    margin-top: 15px;
+}
+#courses {
+    margin-top: -90px;
+}
+#courses div {
+    height: 205px;
+    text-align: center;
+}
+/**footer**/
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+ footer li{
+ 	float: left;
+    margin-right: 10px;
+    padding: 0;
+ }
+/****************/
+</style>
 </head>
 <body>
 	<div class="container-fluid">
 		<header>
-			<img alt="logo" src="img/logo.png">
+			<div>
+				<img alt="logo" src="img/logo.png">
+			</div>
 			<nav>
 				<ul>
-					<li>HMBURGER</li>
-					<li>PIZZA
-						<ul>
-							<li>POPULAR PIZZAS</li>
-							<li>MEATS</li>
-							<li>CHICKEN</li>
-							<li>VEGGIE</li>
+					<li><a>HMBURGER</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle">PIZZA</a>
+						<ul class="dropdown-menu">
+							<li><a>POPULAR PIZZAS</a></li>
+							<li><a>MEATS</a></li>
+							<li><a>CHICKEN</a></li>
+							<li><a>VEGGIE</a></li>
 						</ul>
 					</li>
-					<li>FAST FOOD</li>
-					<li>DRINKS</li>
-				</ul>
+					<li><a>FAST FOOD</a></li>
+					<li><a>DRINKS</a></li>
+				</ul>			
 			</nav>
 		</header>
 		<main>
-			<section id="banner"></section>
+			<section id="banner">
+			<img alt="slide-ban1" class="img-responsive" src="img/slide-ban1.jpg"/>
+			</section>
 			<section id="category" class="row">
-				<img alt="" src=""/>
-				<img alt="" src=""/>
-				<img alt="" src=""/>
+				<div class="col-md-4 col-xs-12">
+					<img alt="ban-1" class="img-responsive" src="img/ban-1.jpg"/>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<img alt="ban-2" class="img-responsive" src="img/ban-2.jpg"/>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<img alt="ban-3" class="img-responsive" src="img/ban-3.jpg"/>
+				</div>
 			</section>
 			<section id="presentation">
-				<article class="row">
-					<h1></h1>
-					<p></p>
-					<img alt="" src=""/>
-				</article>
-				<ul class="row">
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
+				<h1>Welcome to Yummy!</h1>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+				when an unknown printer took a galley of type and scrambled it to make a type 
+				specimen book. It has survived not only five centuries, but also the leap into 
+				electronic typesetting, remaining essentially unchanged. </p>
+				<img alt="0" class="img-responsive" src="img/banner-welcome.png"/>
 			</section>
-			<img id="bottom" class="img-responsive"/>
+			<section class="row" id="courses">
+				<div class="col-md-6 col-lg-3 col-sm-6 col-xs-12">
+					<img alt="4" src="img/r4.png"/>
+				</div>
+				<div class="col-md-6 col-lg-3 col-sm-6 col-xs-12">
+					<img alt="5" src="img/r3.png"/>
+				</div>
+				<div class="col-md-6 col-lg-3 col-sm-6 col-xs-12">
+					<img alt="6" src="img/r2.png"/>
+				</div>
+				<div class="col-md-6 col-lg-3 col-sm-6 col-xs-12">
+					<img alt="7" src="img/r1.png"/>
+				</div>				
+			</section>
+			<img alt="bottom" class="img-responsive"/>
 		</main>
-		<footer>
-			<nav></nav>
+		<footer class="row">
+		footer
+			<nav class="col-md-12">
+				<ul>
+					<li>HOME</li>
+					<li>HMBURGER</li>
+					<li>PIZZA</li>
+					<li>FAST FOOD</li>
+					<li>DRINKS</li>
+					<li>COMBO BUY</li>
+					<li>CONTACT</li>
+					<li>WISHLIST</li>
+					<li>MY ACCOUNT</li>
+					<li>LOGIN</li>
+				</ul>
+			</nav>
+			<div class="col-md-12">Copyright</div>
 		</footer>
 	</div>
 </body>
