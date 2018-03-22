@@ -45,31 +45,42 @@ header div {
 header img {
     width: 90px;
 }
-header ul{
-	background-color: greenyellow;
- 	list-style-type: none;
-    margin: 15px;
-    padding: 0;
-    text-align: right;
-}
 .navbar-brand {
     height: 55px;
     padding: 0 35px;
 }
 /**menu**/
- .navbar-default{
+
+header ul{
+	background-color: #f2e8de;
+ 	list-style-type: none;
+    padding: 30px;
+ 	border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);    
+}
+header li {
+    margin-bottom: 10px;
+}
+header a{
+	color: #997332;
+	line-height: 1.5;
+}
+.navbar-default{
  	background-color: unset;
  	border:unset;
  }
- #nav1 {
+#nav1 {
     width: 300px;
-    height: 300px;
+    height: 200px;
     float: right;
-    background-color: red;
 }
 .navbar-toggle {
-    margin-right: 25px;
+    margin-right: 35px;
     border: unset;
+    padding-bottom: 0px;
 }
 .navbar-default .navbar-toggle:focus {
     background-color: unset;
@@ -82,6 +93,11 @@ header ul{
     height: 4px;
     border-radius: unset;
     margin-bottom: 5px;
+}
+.dropdown-menu {
+}
+.dropdown-menu>li>a {
+    color: #997332;
 }
 /**main**/
 #banner {
