@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>YUMMY - FAST FOOD</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Lorem Ipsum is simply dummy text of the printing and typesetting industry, lorem Ipsum has been the industry's standard dummy text ever since the 1500s."/>
+<meta name="description" content="Lorem Ipsum is simply dummy text of the printing and typesetting industry, lorem Ipsum has been the industry's standard dummy text ever since the 1500s." />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="http://malsup.github.com/jquery.cycle2.js"></script>
@@ -31,7 +31,7 @@
 							</div>
 						</div>
 						<a class="navbar-brand" href="#">
-							<img alt="logo" src="img/logo.png"/>
+							<img alt="logo" src="img/logo.png" />
 						</a>
 					</div>
 
@@ -76,10 +76,18 @@
 		</header>
 		<main>
 		<section id="banner">
-			<div class="cycle-slideshow">
-				<img alt="slide-ban1" class="img-responsive" src="img/slide-ban1.jpg" />
-				<img alt="slide-ban2" class="img-responsive" src="img/slide-ban2.jpg" />
-				<img alt="slide-ban3" class="img-responsive" src="img/slide-ban3.jpg" />
+			<div class="cycle-slideshow" data-cycle-slides="li">
+				<ul>
+					<li>
+						<img alt="slide-ban1" class="img-responsive" src="img/slide-ban1.jpg" />
+					</li>
+					<li>
+						<img alt="slide-ban2" class="img-responsive" src="img/slide-ban2.jpg" />
+					</li>
+					<li>
+						<img alt="slide-ban3" class="img-responsive" src="img/slide-ban3.jpg" />
+					</li>
+				</ul>
 				<div class="cycle-pager"></div>
 			</div>
 
@@ -95,11 +103,21 @@
 				<img alt="ban-3" class="img-responsive" src="img/ban-3.jpg" />
 			</div>
 		</section>
-		<section id="presentation">
+		<section id="presentation" class="row">
 			<h1>Welcome to Yummy!</h1>
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
 				also the leap into electronic typesetting, remaining essentially unchanged.</p>
-			<img alt="banner-welcome" class="img-responsive" src="img/banner-welcome.png" />
+			<ul class="hidden-sm hidden-xs">
+				<li class="layer" data-depth="1.00"><img src="img/panino.png"></li>
+				<li class="layer" data-depth="0.80"><img src="img/txt4.png"></li>
+				<li class="layer" data-depth="0.60"><img src="img/txt3.png"></li>
+				<li class="layer" data-depth="0.40"><img src="img/txt2.png"></li>
+				<li class="layer" data-depth="0.20"><img src="img/txt1.png"></li>
+				<li class="layer" data-depth="0.00"><img src=""></li>
+			</ul>
+			<div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+				<img class="img-responsive" alt="banner-welcome" src="img/banner-welcome.png" />
+			</div>
 		</section>
 		<section class="row" id="courses">
 			<div class="col-md-6 col-lg-3 col-sm-6 col-xs-12">
@@ -166,5 +184,7 @@
 			<div class="col-md-12">Copyright &copy; 2018 Fast Food. All Rights Reserved</div>
 		</footer>
 	</div>
+	<script src="js/jquery.parallax.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
