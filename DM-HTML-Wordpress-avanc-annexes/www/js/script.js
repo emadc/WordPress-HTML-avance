@@ -1,4 +1,4 @@
-// image presantation animations
+// image presantation animation
 $('#presentation ul').parallax();
 
 setInterval(function() {
