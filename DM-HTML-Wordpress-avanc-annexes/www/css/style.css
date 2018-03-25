@@ -255,7 +255,51 @@ header a {
 	border-radius: 100px;
 	margin: auto;
 }
+/*******spin animation*********/
+#courses img {
+	transform: rotate(0deg);
+	transition: 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
 
+#courses div:hover img{
+	transform: rotate(270deg);
+	transition: 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+	box-shadow: 1px 1px 10px  rgba(255, 255, 255,0);
+}
+
+#courses .glow-wrap {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 191px;
+	height: 191px;
+	left: -50%;
+	right: -50%;
+	margin: auto;
+	border-radius: 100px;
+}
+
+#courses .glow {
+	display: block;
+	position: absolute;
+	width: 40%;
+	height: 200%;
+	background: rgba(255, 255, 255, 0.5);
+	top: 0;
+	filter: blur(5px);
+	transform: rotate(45deg) translate(-450%, 0);
+	transition: all 1.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#courses div:hover .glow {
+	transform: rotate(45deg) translate(450%, 0);
+	transition: all 1.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#courses div:hover img, #courses div:hover .glow-wrap {
+	margin-top: 0;
+}
+/***************************/
 .img_bottom {
 	margin: auto;
 }
