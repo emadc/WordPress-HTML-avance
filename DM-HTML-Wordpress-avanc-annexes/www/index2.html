@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>YUMMY - FAST FOOD</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Lorem Ipsum is simply dummy text of the printing and typesetting industry, lorem Ipsum has been the industry's standard dummy text ever since the 1500s." />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container-fluid">
+		<!-- en-tête et menu -->
+		<header>
+			<!-- menu responsive -->
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<div class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav1" aria-expanded="false">
+							<div class="spinner-master3">
+								<input type="checkbox" id="spinner-form3" />
+								<label for="spinner-form3" class="spinner-spin3">
+									<div class="spinner3 diagonal part-1"></div>
+									<div class="spinner3 horizontal"></div>
+									<div class="spinner3 diagonal part-2"></div>
+								</label>
+							</div>
+						</div>
+						<a class="navbar-brand" href="#">
+							<img alt="logo" src="img/logo.png" />
+						</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="nav1">
+						<ul>
+							<li>
+								<a>HAMBURGER</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle">
+									PIZZA
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a>POPULAR PIZZAS</a>
+									</li>
+									<li>
+										<a>MEATS</a>
+									</li>
+									<li>
+										<a>CHICKEN</a>
+									</li>
+									<li>
+										<a>VEGGIE</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a>FAST FOOD</a>
+							</li>
+							<li>
+								<a>DRINKS</a>
+							</li>
+						</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container-fluid -->
+			</nav>
+		</header>
+		<!-- zone des contenus -->
+		<main>
+		<!-- diaporama -->
+		<section id="banner">
+			<div class="cycle-slideshow" data-cycle-slides="li">
+				<ul>
+					<li>
+						<img alt="slide-ban1" class="img-responsive" src="img/slide-ban1.jpg" />
+					</li>
+					<li>
+						<img alt="slide-ban2" class="img-responsive" src="img/slide-ban2.jpg" />
+					</li>
+					<li>
+						<img alt="slide-ban3" class="img-responsive" src="img/slide-ban3.jpg" />
+					</li>
+				</ul>
+				<div class="cycle-pager"></div>
+			</div>
+
+		</section>
+		<section id="category" class="row">
+			<div class="col-md-4 col-sm-4 col-xs-12">
+				<img alt="ban-1" class="img-responsive" src="img/ban-1.jpg" />
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12">
+				<img alt="ban-2" class="img-responsive" src="img/ban-2.jpg" />
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12">
+				<img alt="ban-3" class="img-responsive" src="img/ban-3.jpg" />
+			</div>
+		</section>
+		<!-- présentation du produit -->
+		<section id="presentation" class="row">
+			<h1>Welcome to Yummy!</h1>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+				also the leap into electronic typesetting, remaining essentially unchanged.</p>
+			<ul class="hidden-sm hidden-xs">
+				<li class="layer" data-depth="1.00"><img src="img/panino.png"></li>
+				<li class="layer" data-depth="0.80"><img src="img/txt4.png"></li>
+				<li class="layer" data-depth="0.60"><img src="img/txt3.png"></li>
+				<li class="layer" data-depth="0.40"><img src="img/txt2.png"></li>
+				<li class="layer" data-depth="0.20"><img src="img/txt1.png"></li>
+				<li class="layer" data-depth="0.00"><img src=""></li>
+			</ul>
+			<div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+				<img class="img-responsive" alt="banner-welcome" src="img/banner-welcome.png" />
+			</div>
+		</section>
+		<section class="row" id="courses">
+			<div class="col-md-6 col-lg-3 col-sm-6 col-xs-12">
+				<img class="img-responsive" alt="courses-1" src="img/r4.png" />
+				<div class="glow-wrap">
+					<i class="glow"></i>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 col-sm-6 col-xs-12">
+				<img class="img-responsive" alt="courses-2" src="img/r3.png" />
+				<div class="glow-wrap">
+					<i class="glow"></i>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 col-sm-6 col-xs-12">
+				<img class="img-responsive" alt="courses-3" src="img/r2.png" />
+				<div class="glow-wrap">
+					<i class="glow"></i>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 col-sm-6 col-xs-12">
+				<img class="img-responsive" alt="courses-4" src="img/r1.png" />
+				<div class="glow-wrap">
+					<i class="glow"></i>
+				</div>
+			</div>
+		</section>
+		<!-- pied de page avec le sitemap -->
+		<img alt="banner-home-2" class="img-responsive img_bottom" src="img/banner-home-2.png" /> </main>
+		<footer class="row">
+			<nav class="col-md-12">
+				<ul>
+					<li>
+						<a>HOME</a>
+					</li>
+					<li>
+						<a>HMBURGER</a>
+					</li>
+					<li>
+						<a>PIZZA</a>
+					</li>
+					<li>
+						<a>FAST FOOD</a>
+					</li>
+					<li>
+						<a>DRINKS</a>
+					</li>
+					<li>
+						<a>COMBO BUY</a>
+					</li>
+					<li>
+						<a>CONTACT</a>
+					</li>
+					<li>
+						<a>WISHLIST</a>
+					</li>
+					<li>
+						<a>MY ACCOUNT</a>
+					</li>
+					<li>
+						<a>LOGIN</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="col-md-12">Copyright &copy; 2018 Fast Food. All Rights Reserved</div>
+		</footer>
+	</div>
+	<script src="js/jquery.parallax.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
