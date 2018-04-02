@@ -26,5 +26,10 @@
 			<type>2</type>
 			<locationURI>PARENT-4-PROJECT_LOC/var/www/html/wordpress/wp-content/themes</locationURI>
 		</link>
+		<link>
+			<name>DM-HTML-Wordpress-avanc-annexes/wp/plugins/plugins</name>
+			<type>2</type>
+			<locationURI>PARENT-4-PROJECT_LOC/var/www/html/wordpress/wp-content/plugins</locationURI>
+		</link>
 	</linkedResources>
 </projectDescription>

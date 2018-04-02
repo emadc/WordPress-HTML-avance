@@ -44,65 +44,22 @@
 								</label>
 							</div>
 						</div>
-						<a class="navbar-brand" href="#">
+						<a class="navbar-brand" href="index.php">
 							<img alt="logo" src="<?php bloginfo('template_url');?>/img/logo.png" />
 						</a>
 					</div>
-<!-- 					<div class="collapse navbar-collapse" id="nav1"> -->
-<!-- 						<ul> -->
-<!-- 							<li> -->
-<!-- 								<a href="#">HAMBURGER</a> -->
-<!-- 							</li> -->
-<!-- 							<li class="dropdown"> -->
-<!-- 								<a href="#" class="dropdown-toggle"> -->
-<!-- 									PIZZA -->
-<!-- 									<span class="caret"></span> -->
-<!-- 								</a> -->
-<!-- 								<ul class="dropdown-menu"> -->
-<!-- 									<li> -->
-<!-- 										<a href="#">POPULAR PIZZAS</a> -->
-<!-- 									</li> -->
-<!-- 									<li> -->
-<!-- 										<a href="#">MEATS</a> -->
-<!-- 									</li> -->
-<!-- 									<li> -->
-<!-- 										<a href="#">CHICKEN</a> -->
-<!-- 									</li> -->
-<!-- 									<li> -->
-<!-- 										<a href="#">VEGGIE</a> -->
-<!-- 									</li> -->
-<!-- 								</ul> -->
-<!-- 							</li> -->
-<!-- 							<li> -->
-<!-- 								<a href="#">FAST FOOD</a> -->
-<!-- 							</li> -->
-<!-- 							<li> -->
-<!-- 								<a href="#">DRINKS</a> -->
-<!-- 							</li> -->
-<!-- 						</ul> -->
-<!-- 					</div> -->
-						<?php 
-// 						wp_nav_menu( array(
-//     							'menu' => 'Principal',
-// 								container => 'div',
-// 								container_class => 'collapse navbar-collapse',
-// 								container_id => 'nav1',
-// 								'items_wrap' => '<ul>%3$s</ul>'
-// ) );
-?>
-
-<?php 
-wp_nav_menu( array(
-		'menu' => 'Principal',
-		'depth'				=> 2, // 1 = with dropdowns, 0 = no dropdowns.
-		'container'			=> 'div',
-		'container_class'	=> 'collapse navbar-collapse',
-		'container_id'		=> 'nav1',
-		'menu_class'		=> 'navbar-nav mr-auto',
-		'fallback_cb'		=> 'WP_Bootstrap_Navwalker::fallback',
-		'walker'			=> new WP_Bootstrap_Navwalker()
-) );
-?>
+					<?php 
+						wp_nav_menu( array(
+								'menu' 				=> 'Principal',
+								'depth'				=> 2,
+								'container'			=> 'div',
+								'container_class'	=> 'collapse navbar-collapse',
+								'container_id'		=> 'nav1',
+								'menu_class'		=> 'navbar-nav mr-auto',
+								'fallback_cb'		=> 'WP_Bootstrap_Navwalker::fallback',
+								'walker'			=> new WP_Bootstrap_Navwalker()
+						) );
+					?>
 					<!-- /.navbar-collapse -->
 				</div>
 				<!-- /.container-fluid -->

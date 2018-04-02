@@ -98,12 +98,4 @@ get_header();
 			</div>				
 		<?php endif; ?>										
 		</section>
-		<!-- pied de page avec le sitemap -->
-		<?php if( get_field('image_footer') ): $image = get_field('footer_image'); ?>
-			<section class="row">
-				<div class="col-xs-12">
-					<img class="img-responsive img_bottom" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />	
-				</div>
-			</section>
-		<?php endif; ?>			
 <?php get_footer();?>

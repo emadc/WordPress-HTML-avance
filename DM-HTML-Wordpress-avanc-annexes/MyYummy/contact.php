@@ -1,6 +1,12 @@
-<?php get_header(); ?>
+<?php
+/*
+ * Template name: contact
+ */
+get_header ();
+?>
 <section id="contact" class="row">
 	<div class="col-md-7 col-sm-12 col-xs-12">
+		
 		<?php 	while ( have_posts() ) : the_post();?>
 				<div>
 					<h1><?php the_title(); ?></h1>

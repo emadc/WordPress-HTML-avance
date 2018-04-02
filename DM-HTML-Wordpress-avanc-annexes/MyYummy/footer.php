@@ -9,44 +9,24 @@
  * @since Twenty Sixteen 1.0
  */
 ?>
-
-
+		<!-- pied de page avec le sitemap -->
+		<?php if( get_field('footer_image') ): $image = get_field('footer_image'); ?>
+			<section class="row">
+				<div class="col-xs-12">
+					<img class="img-responsive img_bottom" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />	
+				</div>
+			</section>
+		<?php endif; ?>			
 		<footer class="row">
-			<nav class="col-md-12">
-				<ul>
-					<li>
-						<a href="#">HOME</a>
-					</li>
-					<li>
-						<a href="#">HMBURGER</a>
-					</li>
-					<li>
-						<a href="#">PIZZA</a>
-					</li>
-					<li>
-						<a href="#">FAST FOOD</a>
-					</li>
-					<li>
-						<a href="#">DRINKS</a>
-					</li>
-					<li>
-						<a href="#">COMBO BUY</a>
-					</li>
-					<li>
-						<a href="#">CONTACT</a>
-					</li>
-					<li>
-						<a href="#">WISHLIST</a>
-					</li>
-					<li>
-						<a href="#">MY ACCOUNT</a>
-					</li>
-					<li>
-						<a href="#">LOGIN</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="col-md-12">Copyright &copy; 2018 Fast Food. All Rights Reserved</div>
+			<?php 
+				wp_nav_menu( array(
+    					'menu'				=> 'Footer',
+						'container'			=> 'nav',
+						'container_class'	=> 'col-xs-12',
+						'items_wrap'		=> '<ul>%3$s</ul>'
+				) );
+			?>
+			<div class="col-xs-12">Copyright &copy; 2018 Fast Food. All Rights Reserved</div>
 		</footer>
 	</div>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

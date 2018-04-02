@@ -7,8 +7,14 @@ body {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
+h1{
+	font-family: 'Playball', cursive;
+}
+
 a {
 	cursor: pointer;
+	font-size: initial;
+	color: #333;
 }
 
 a:hover {
@@ -94,6 +100,18 @@ header a {
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
 	background-color: unset;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus{
+	background-color: unset;
+	text-decoration: underline;
+	color: #ffc03f;
+}
+
+.navbar-default .navbar-nav > .active > a:hover{
+	text-decoration: none;
+	background-color: unset;
+	color: #ffc03f;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -252,7 +270,6 @@ header a {
 }
 
 #presentation h1 {
-	font-family: 'Playball', cursive;
 	font-size: 35px;
 	letter-spacing: 1px;
 }
@@ -390,6 +407,27 @@ header a {
 	margin-top: 0;
 }
 /***************************/
+
+/**contact**/
+#contact {
+    margin-top: 100px;
+}
+#contact h1 {
+    margin: 40px 0 20px;
+}
+#contact div div {
+    margin: 0 auto 60px;
+    max-width: 435px;
+}
+#secondary {
+    margin: 0;
+	width: unset;
+	padding: 15px;
+}
+.widget {
+    border-top: 4px solid #9e1414;
+}
+/***********/
 .img_bottom {
 	margin: auto;
 }
@@ -566,5 +604,8 @@ footer div {
 	}
 	.img_bottom {
 		margin: 0 auto -15px;
+	}
+	#contact {
+	    padding-top: 50px;
 	}
 }
