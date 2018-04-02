@@ -79,9 +79,25 @@ header a {
 	line-height: 1.5;
 }
 
+.my_readcrumb {
+    position: absolute;
+    top: 35px;
+    left: 130px;
+}
+
+.my_readcrumb a{
+    color:#fff;
+}
+
+.my_readcrumb a:hover{
+    color:#ffc03f;
+}
+
+
 .navbar-default {
 	background-color: unset;
 	border: unset;
+	position: relative;
 }
 
 #nav1 {
@@ -535,6 +551,9 @@ footer div {
 	.collapse.in {
 		display: block !important;
 	}
+	#secondary {
+	    width: 100%;
+	}
 }
 
 @media ( min-width : 991px) {
@@ -555,6 +574,10 @@ footer div {
 		float: left;
 		margin-right: 50px;
 	}
+	.my_readcrumb {
+	    top: 75px;
+	    left: 340px;
+	}	
 	.navbar-default .navbar-nav > li > a{
 		color: #fff;
 		font-size: 16px
