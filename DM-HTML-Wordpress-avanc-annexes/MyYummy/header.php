@@ -45,7 +45,13 @@
 							</div>
 						</div>
 						<a class="navbar-brand" href="index.php">
-							<img alt="logo" src="<?php bloginfo('template_url');?>/img/logo.png" />
+						<?php 
+							if ( function_exists( 'the_custom_logo' ) ) {
+								$custom_logo_id = get_theme_mod( 'custom_logo' );
+								$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+								echo "<img src='$image[0]' alt='logo'/>";
+							}
+						?>
 						</a>
 					</div>
 					<?php 
