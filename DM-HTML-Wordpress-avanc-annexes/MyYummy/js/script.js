@@ -3,11 +3,15 @@ $('#presentation ul').parallax();
 
 setInterval(function() {
 	
-	document.getElementById("presentation").setAttribute("class", "row go");
+	var target = document.getElementById("presentation");
 	
-	setTimeout(function(){
-		document.getElementById("presentation").setAttribute("class", "row");
-		}, 1000);
+	if(target != null){
+		document.getElementById("presentation").setAttribute("class", "row go");
+		
+		setTimeout(function(){
+			document.getElementById("presentation").setAttribute("class", "row");
+			}, 1000);
+	}
 	
 	
 }, 5000);

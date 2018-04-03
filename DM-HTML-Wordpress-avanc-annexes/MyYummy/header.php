@@ -69,8 +69,5 @@
 					<!-- /.navbar-collapse -->
 				</div>
 				<!-- /.container-fluid -->
-				<div class="my_readcrumb">
-					<?php if(function_exists('fil_ariane')){ echo fil_ariane(); } ?>
-				</div>
 			</nav>
 		</header>
