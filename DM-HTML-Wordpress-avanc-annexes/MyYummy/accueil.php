@@ -50,16 +50,21 @@ get_header();
 		<section id="presentation" class="row">			
 			<h1><?php the_title(); ?></h1>
 			<p><?php the_field('presentation'); ?></p>
-			<ul class="hidden-sm hidden-xs">
-				<li class="layer" data-depth="1.00"><img src="<?php bloginfo('template_url');?>/img/panino.png"></li>
-				<li class="layer" data-depth="0.80"><img src="<?php bloginfo('template_url');?>/img/txt4.png"></li>
-				<li class="layer" data-depth="0.60"><img src="<?php bloginfo('template_url');?>/img/txt3.png"></li>
-				<li class="layer" data-depth="0.40"><img src="<?php bloginfo('template_url');?>/img/txt2.png"></li>
-				<li class="layer" data-depth="0.20"><img src="<?php bloginfo('template_url');?>/img/txt1.png"></li>
-				<li class="layer" data-depth="0.00"><img src=""></li>
-			</ul>
-			<?php if( get_field('presentation_image') ): $image = get_field('presentation_image'); ?>
+			<?php if( get_field('parallaxe') ): ?>
+				<ul class="hidden-sm hidden-xs">
+					<li class="layer" data-depth="1.00"><img src="<?php bloginfo('template_url');?>/img/panino.png"></li>
+					<li class="layer" data-depth="0.80"><img src="<?php bloginfo('template_url');?>/img/txt4.png"></li>
+					<li class="layer" data-depth="0.60"><img src="<?php bloginfo('template_url');?>/img/txt3.png"></li>
+					<li class="layer" data-depth="0.40"><img src="<?php bloginfo('template_url');?>/img/txt2.png"></li>
+					<li class="layer" data-depth="0.20"><img src="<?php bloginfo('template_url');?>/img/txt1.png"></li>
+					<li class="layer" data-depth="0.00"><img src=""></li>
+				</ul>
 				<div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+					<img class="img-responsive" src="<?php bloginfo('template_url');?>/img/banner-welcome.png" alt="banner welcome" />
+				</div>	
+			<?php endif;?>
+			<?php if( get_field('presentation_image') && !get_field('parallaxe')): $image = get_field('presentation_image'); ?>
+				<div class="col-xs-12">
 					<img class="img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 				</div>				
 			<?php endif; ?>					
